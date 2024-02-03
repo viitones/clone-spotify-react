@@ -1,0 +1,71 @@
+@use "../variables"
+@use "../mixins"
+
+.library
+    @include mixins.card-side
+    margin-top: .8rem
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+
+    .library__content
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .library-button
+            display: flex
+            text-align: center
+            text-decoration: none
+            text-transform: none
+            padding: .5rem .25rem
+            // margin-right: .9rem
+            background-color: transparent
+            color: variables.$font-color
+            border: 0
+            font-size: .95rem
+            font-weight: bold
+
+        .fa
+            font-size: 1rem
+            color: variables.$font-color
+
+    .section-playlist
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        font-weight: 600
+        font-size: .9rem
+        background-color: variables.$bg-color-secondary
+        color: variables.$font-color
+        margin: 1.2rem 0
+        padding: 1rem 1.1rem
+        border-radius: 10px
+
+        .section__playlist__content
+            display: flex
+            flex-direction: column
+
+        .text
+            padding-bottom: .8rem
+            color: #fff
+
+        .subtitle
+            font-size: .8rem
+            font-weight: 500
+
+        .section__playlist__button
+            display: flex
+            justify-content: center
+            background-color: #fff
+            color: #000
+            border-radius: 20px
+            border: 0
+            font-size: .9rem
+            font-weight: bold
+            text-decoration: none
+            text-transform: none
+            padding: .6rem
+            width: 7.5rem
+            margin-top: .8rem

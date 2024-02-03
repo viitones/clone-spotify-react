@@ -1,0 +1,38 @@
+@use "../variables"
+@use "../mixins"
+
+
+.sidebar__navigation
+    @include mixins.card-side
+
+    .logo
+        padding: -1rem
+
+        a
+            @include mixins.icons
+            font-weight: 600
+            font-size: 1rem
+            
+        svg
+            font-size: 1.5rem
+
+    ul
+        margin-top: .7rem
+        padding: .5rem .8rem
+        list-style: none
+        
+        li
+            padding: .5rem 0
+
+            a
+                @include mixins.icons
+                gap: .8rem
+                font-weight: 600
+            
+            svg
+                font-size: 1.5rem
+
+
+                
+
+
